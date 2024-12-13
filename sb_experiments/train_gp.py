@@ -54,6 +54,11 @@ if __name__ == "__main__":
                     FOLDER_PATH_OUT_S3 = f"luisito/these/sb_experiments/gp/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/"
                     FILE_PATH_OUT_S3 = FOLDER_PATH_OUT_S3 + "optimized_parameters.json"
 
+                    # Check if the model has already been trained.
+                    if fs.exists(FILE_PATH_OUT_S3):
+                        print(f"File {FILE_PATH_OUT_S3} already exists. Do not compute again.")
+                        continue
+
                     # Train the Gausian Process Regression.
                     kernel = Matern52(input_dim=1)
                     gp_model = GPRegression(
@@ -65,7 +70,7 @@ if __name__ == "__main__":
                         noise_var=1.0,
                         mean_function=None,
                     )
-                    gp_model.kern.variance.fix()  # Here we fix the variance parameter of the kernel.
+                    gp_model.kern.variance.fix()  # Fixing the variance parameter.
                     gp_model.optimize_restarts(
                         num_restarts=10, messages=False, verbose=True, max_iters=1000
                     )
@@ -95,4 +100,4 @@ if __name__ == "__main__":
                     # Save a copy of the model
                     MODEL_PATH_OUT_S3 = FOLDER_PATH_OUT_S3 + "gpy_model.pkl"
                     with fs.open(MODEL_PATH_OUT_S3, 'wb') as file_out:
-                        pickle.dump(m, file_out)
+                        pickle.dump(gp_model, file_out)
