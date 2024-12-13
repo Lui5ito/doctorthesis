@@ -85,7 +85,7 @@ if __name__ == "__main__":
     fs = s3fs.S3FileSystem(client_kwargs={"endpoint_url": S3_ENDPOINT_URL})
 
     # Lengthscales to compute
-    length_scale_list = np.linspace(0.1, 1, 10)
+    length_scale_list = np.round(np.linspace(0.1, 1, 10), 3)
     delta = 1e-3
     lambda2 = 1
     problem = "Liang"
