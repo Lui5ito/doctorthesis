@@ -28,12 +28,12 @@ if __name__ == "__main__":
                     # Construct file path
                     FOLDER_PATH_OUT_S3 = f"luisito/these/sb_experiments/data/case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/"
                     FILE_PATH_OUT_S3 = FOLDER_PATH_OUT_S3 + "data.npz"
-                    
+
                     # Check if the file already exists
                     if fs.exists(FILE_PATH_OUT_S3):
                         print(f"File {FILE_PATH_OUT_S3} already exists. Skipping...")
                         continue
-                    
+
                     # Generate the data
                     X, y = ub.data_generation.synthetic_data(
                         case=f"case_{case_number}",
@@ -41,7 +41,7 @@ if __name__ == "__main__":
                         sample_dim=sample_dim,
                         seed=seed,
                     )
-                    
+
                     # Save the data
                     with fs.open(FILE_PATH_OUT_S3, mode="wb") as file_out:
                         np.savez(file_out, X=X, y=y)
