@@ -30,7 +30,7 @@ if __name__ == "__main__":
     all_sample_dims = [1]
     all_sample_seeds = [123, 456, 987, 321]
 
-    # Generate the data
+    # Retrieve the data
     for case_number in cases:
         for sample_size in all_sample_sizes:
             for sample_dim in all_sample_dims:
