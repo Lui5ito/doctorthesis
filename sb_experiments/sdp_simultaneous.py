@@ -132,8 +132,8 @@ if __name__ == "__main__":
 
                         FOLDER_PATH_OUT_S3 = f"luisito/these/sb_experiments/sdp_simultaneous/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/problem_{problem}/lambda2_{lambda2}/delta_{delta}/variance_lengthscale_{variance_lengthscale}/"
                         # Check if the file already exists
-                        if fs.exists(FILE_PATH_IN_S3):
-                            print(f"File {FILE_PATH_IN_S3} already exists. Do not compute.")
+                        if fs.exists(FOLDER_PATH_OUT_S3):
+                            print(f"File {FOLDER_PATH_OUT_S3} already exists. Do not compute.")
                             continue
 
                         # Define the model
