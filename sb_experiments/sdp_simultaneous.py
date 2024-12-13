@@ -142,7 +142,7 @@ if __name__ == "__main__":
                             variance_kernel=kernels.Matern(length_scale=variance_lengthscale, length_scale_bounds=(1e-5, 1e5), nu=2.5),
                             lambda2=lambda2,
                             delta=delta,
-                            s=theta_m["post_training_norm"],
+                            s=theta_m["posterior_training_norm"],
                             problem=problem,
                             checkSDP=False,
                             verbose=True
