@@ -3,7 +3,8 @@ We compute the SDP model by the following:
 - On the train dataset, we compute:
     - theta_m (using a Gaussian Process),
     - m_hat and v_hat using the SDP problem,
-    - theta_f which is the lengthscale determined by the highest HSIC.
+    - the energy-HSIC computed on the training data.
+    (- theta_f which is the lengthscale determined by the highest HSIC.)
 """
 
 import universalbands as ub
@@ -76,7 +77,7 @@ def HSIC(X_train, y_train, sdp_model):
     abs_errors = np.abs(y_train - mean_estimator_prediction)
     e_hsic_train = compute_hsic(abs_errors, predicted_score_function)
 
-    return e_hsic_train 
+    return e_hsic_train
 
 
 if __name__ == "__main__":
@@ -156,6 +157,11 @@ if __name__ == "__main__":
                         # Save SDP params
                         FILE_PATH_OUT_S3_PARAMS = FOLDER_PATH_OUT_S3 + "all_parameters.json"
                         all_parameters = {
+                            "training_data": {
+                                "data_case": case_number,
+                                "shape": (sample_size, sample_dim),
+                                "seed": seed,
+                            },
                             "input_parameters": {
                                 "problem": problem,
                                 "theta_m": theta_m,
@@ -172,7 +178,7 @@ if __name__ == "__main__":
                             },
                         }
                         with fs.open(FILE_PATH_OUT_S3_PARAMS, mode="w") as file_out:
-                            json.dump(theta_m, file_out)
+                            json.dump(all_parameters, file_out)
 
                         # Save SDP objects to reconstruct the model
                         FILE_PATH_OUT_S3_OBJECTS = FOLDER_PATH_OUT_S3 + "trained_objects.npz"
