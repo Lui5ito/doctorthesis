@@ -29,7 +29,7 @@ if __name__ == "__main__":
     cases = [5]
     all_sample_sizes = [100]
     all_sample_dims = [1]
-    all_sample_seeds = [123]
+    all_sample_seeds = [123, 456, 987, 321]
 
     for case_number in cases:
         for sample_size in all_sample_sizes:
@@ -92,7 +92,7 @@ if __name__ == "__main__":
                                                     "seed": seed,
                                                 },
                                                 "input_parameters": {
-                                                    "alpha": problem,
+                                                    "alpha": alpha,
                                                 },
                                                 "output_parameters": {
                                                     "calibration_hsic": calibration_hsic,

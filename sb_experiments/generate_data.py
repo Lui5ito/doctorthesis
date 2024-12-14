@@ -16,9 +16,9 @@ if __name__ == "__main__":
 
     # Which data to generate
     cases = [5]
-    all_sample_sizes = [100]
+    all_sample_sizes = [300]
     all_sample_dims = [1]
-    all_sample_seeds = [123, 456, 987, 321]
+    all_sample_seeds = [11, 12, 13, 14]
 
     # Generate the data
     for case_number in cases:
