@@ -29,7 +29,7 @@ if __name__ == "__main__":
     cases = [5]
     all_sample_sizes = [100]
     all_sample_dims = [1]
-    all_sample_seeds = [123, 456, 987, 321]
+    all_sample_seeds = [123, 124, 125, 126, 127]
 
     for case_number in cases:
         for sample_size in all_sample_sizes:
@@ -53,7 +53,7 @@ if __name__ == "__main__":
                         calibration_cases = [5]
                         calibration_all_sample_sizes = [100]
                         calibration_all_sample_dims = [1]
-                        calibration_all_sample_seeds = [9, 8, 7]
+                        calibration_all_sample_seeds = [321, 322, 323]
                         calibration_all_alphas = [0.05]
                         for calibration_case_number in calibration_cases:
                             for calibration_sample_size in calibration_all_sample_sizes:

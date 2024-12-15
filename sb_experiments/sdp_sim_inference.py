@@ -92,6 +92,18 @@ def plot(
     return fig
 
 
+def compute_marginal_coverage(y_true, mean_est, bands_est):
+    lower_bound = mean_est-bands_est
+    upper_bound = mean_est+bands_est
+    coverage = ((lower_bound <= y_true) & (y_true <= upper_bound)).mean()
+    print(coverage)
+
+    return coverage
+
+def compute_average_length(bands_est):
+    return np.mean(bands_est)    
+
+
 if __name__ == "__main__":
     # Create filesystem object
     S3_ENDPOINT_URL = "https://" + os.environ["AWS_S3_ENDPOINT"]
@@ -107,7 +119,7 @@ if __name__ == "__main__":
     cases = [5]
     all_sample_sizes = [100]
     all_sample_dims = [1]
-    all_sample_seeds = [123, 456, 987, 321]
+    all_sample_seeds = [123, 124, 125, 126, 127]
 
     for case_number in cases:
         for sample_size in all_sample_sizes:
@@ -128,12 +140,12 @@ if __name__ == "__main__":
                             data = np.load(file_in)
                             X_train = data["X"]
                             y_train = data["y"]
-                        
+
                         # Which calibration data
                         calibration_cases = [5]
                         calibration_all_sample_sizes = [100]
                         calibration_all_sample_dims = [1]
-                        calibration_all_sample_seeds = [9, 8, 7]
+                        calibration_all_sample_seeds = [321, 322, 323]
                         calibration_all_alphas = [0.05]
                         for calibration_case_number in calibration_cases:
                             for calibration_sample_size in calibration_all_sample_sizes:
@@ -154,7 +166,7 @@ if __name__ == "__main__":
                                                 data = np.load(file_in)
                                                 X_calibration = data["X"]
                                                 y_calibration = data["y"]
-                                            
+
                                             # Retrieve sdp model path
                                             FOLDER_PATH_IN_S3 = f"luisito/these/sb_experiments/sdp_simultaneous/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/problem_{problem}/lambda2_{lambda2}/delta_{delta}/variance_lengthscale_{variance_lengthscale}/calibration/data_case_{calibration_case_number}/sample_shape_({calibration_sample_size},{calibration_sample_dim})/seed_{calibration_seed}/alpha_{alpha}/"
                                             FILE_PATH_IN_S3_MODEL = FOLDER_PATH_IN_S3 + "sdp_model_calibrated.pkl"
@@ -172,7 +184,7 @@ if __name__ == "__main__":
                                             inference_cases = [5]
                                             inference_all_sample_sizes = [300]
                                             inference_all_sample_dims = [1]
-                                            inference_all_sample_seeds = [11, 12, 13, 14]
+                                            inference_all_sample_seeds = [987, 986, 985]
                                             for inference_case_number in inference_cases:
                                                 for inference_sample_size in inference_all_sample_sizes:
                                                     for inference_sample_dim in inference_all_sample_dims:
@@ -198,8 +210,20 @@ if __name__ == "__main__":
                                                             mean_prediction, bands_prediction = sdp_model.predict(X=X_test)
 
                                                             # Still to compute some metrics on test data
-                                                            # ...
-                                                            # ...
+                                                            FILE_PATH_OUT_S3_PARAMS = FOLDER_PATH_OUT_S3 + "test_metrics.json"
+                                                            marginal_coverage = compute_marginal_coverage(y_test, mean_prediction, bands_prediction)
+                                                            avg_length = compute_average_length(bands_prediction)
+                                                            test_metrics = {
+                                                                "test_data": {
+                                                                    "data_case": inference_case_number,
+                                                                    "shape": (inference_sample_size, inference_sample_dim),
+                                                                    "ssed": inference_seed,
+                                                                },
+                                                                "marginal_coverage": marginal_coverage,
+                                                                "average_length": avg_length,
+                                                            }
+                                                            with fs.open(FILE_PATH_OUT_S3_PARAMS, mode="w") as file_out:
+                                                                json.dump(test_metrics, file_out)
                                                             # ...
 
                                                             # Plot
@@ -212,17 +236,17 @@ if __name__ == "__main__":
                                                                 y_test=y_test,
                                                                 mean_estimation_test=mean_prediction,
                                                                 bands_estimation_test=bands_prediction,
-                                                                limits=(-3,5),
+                                                                limits=(-3, 5),
                                                                 title=f"SDP Model\nLengthscale is {variance_lengthscale}.",
                                                             )
                                                             FILE_PATH_OUT_S3_PLOT = FOLDER_PATH_OUT_S3 + "figure.pdf"
                                                             with fs.open(FILE_PATH_OUT_S3_PLOT, mode="wb") as file_out:
-                                                                figure.savefig(file_out, transparent=True, dpi='figure', format="pdf", 
-                                                                metadata=None,  # can add metadata dict here?
-                                                                bbox_inches=None, pad_inches=0.1,facecolor='auto', edgecolor='auto', backend=None)
+                                                                figure.savefig(file_out, transparent=True, dpi='figure', format="pdf",
+                                                                metadata=None,
+                                                                bbox_inches=None, pad_inches=0.1, facecolor='auto', edgecolor='auto', backend=None)
                                                                 plt.close()
 
-                                                            # Save SDP objects to reconstruct the model
+                                                            # Save model predictions
                                                             FILE_PATH_OUT_S3_OBJECTS = FOLDER_PATH_OUT_S3 + "predictions.npz"
                                                             with fs.open(FILE_PATH_OUT_S3_OBJECTS, mode="wb") as file_out:
                                                                 np.savez(

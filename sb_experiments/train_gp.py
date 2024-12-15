@@ -28,7 +28,7 @@ if __name__ == "__main__":
     cases = [5]
     all_sample_sizes = [100]
     all_sample_dims = [1]
-    all_sample_seeds = [123, 456, 987, 321]
+    all_sample_seeds = [123, 124, 125, 126, 127]
 
     # Retrieve the data
     for case_number in cases:
