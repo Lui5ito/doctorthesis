@@ -106,9 +106,10 @@ if __name__ == "__main__":
                                         ax_index += 1
     
     # Finish the figure and save
+    figs.suptitle('e-HSIC vs lengthscales for multiple seeds and both calibration and training data.', x=0.5, y=0.99, size = 16, weight = 'bold')
     figs.tight_layout()
 
-    FILE_PATH_OUT_S3 = "luisito/these/sb_experiments/images/" + "e-HISC_vs_Lengthscales.pdf"
+    FILE_PATH_OUT_S3 = "luisito/these/sb_experiments/images/" + "e-HISC_vs_Lengthscales2.pdf"
     with fs.open(FILE_PATH_OUT_S3, mode="wb") as file_out:
         figs.savefig(file_out, format="pdf", transparent=True, dpi=600)
 
