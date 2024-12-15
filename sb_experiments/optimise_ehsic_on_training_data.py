@@ -79,26 +79,25 @@ def HSIC(X_train, y_train, sdp_model):
 
     return e_hsic_train
 
-def objective_function(theta_v, grad):
+
+def objective_function(theta_v, grad, settings):
 
     # Log the tested value
     tested_values.append(theta_v[0])
-    print(f"Lengthscale tested: {theta_v[0]}")
+    print(f"INSIDE OBJ - Lengthscale tested: {theta_v[0]}")
 
     # Define problem
-    delta = 1e-3
-    lambda2 = 1
-    problem = "Liang"
+    delta = settings["delta"]
+    lambda2 = settings["lambda2"]
+    problem = settings["problem"]
 
     # Define training data
-    case_number = 5
-    sample_size = 100
-    sample_dim = 1
-    seed = 123
+    case_number = settings["case_number"]
+    sample_size = settings["sample_size"]
+    sample_dim = settings["sample_dim"]
+    seed = settings["seed"]
 
-    # Create filesystem object
-    S3_ENDPOINT_URL = "https://" + os.environ["AWS_S3_ENDPOINT"]
-    fs = s3fs.S3FileSystem(client_kwargs={"endpoint_url": S3_ENDPOINT_URL})
+    fs = settings["fs"]
 
     # Retrieve data path
     data_FOLDER_PATH_IN_S3 = f"luisito/these/sb_experiments/data/case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/"
@@ -140,26 +139,27 @@ def objective_function(theta_v, grad):
     sdp_model.train(X=X_train, y=y_train)
     # Compute HSIC
     train_hsic = HSIC(X_train, y_train, sdp_model)
+    print(f"INSIDE OBJ - Obtained HSIC: {train_hsic}")
+
+
     associated_hsic.append(train_hsic)
 
     return train_hsic
 
 
-def last_train(theta_v, problem_definiton):
+def last_train(theta_v, settings):
     # Define problem
-    delta = 1e-3
-    lambda2 = 1
-    problem = "Liang"
+    delta = settings["delta"]
+    lambda2 = settings["lambda2"]
+    problem = settings["problem"]
 
     # Define training data
-    case_number = 5
-    sample_size = 100
-    sample_dim = 1
-    seed = 123
+    case_number = settings["case_number"]
+    sample_size = settings["sample_size"]
+    sample_dim = settings["sample_dim"]
+    seed = settings["seed"]
 
-    # Create filesystem object
-    S3_ENDPOINT_URL = "https://" + os.environ["AWS_S3_ENDPOINT"]
-    fs = s3fs.S3FileSystem(client_kwargs={"endpoint_url": S3_ENDPOINT_URL})
+    fs = settings["fs"]
 
     # Retrieve data path
     data_FOLDER_PATH_IN_S3 = f"luisito/these/sb_experiments/data/case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/"
@@ -222,7 +222,7 @@ def last_train(theta_v, problem_definiton):
     }
     with fs.open(FILE_PATH_OUT_S3_PARAMS, mode="w") as file_out:
         json.dump(all_parameters, file_out)
-    
+
     # Save whole sdp model
     FILE_PATH_OUT_S3_MODEL = FOLDER_PATH_OUT_S3 + "sdp_model.pkl"
     with fs.open(FILE_PATH_OUT_S3_MODEL, mode="wb") as file_out:
@@ -236,33 +236,78 @@ def last_train(theta_v, problem_definiton):
     return "Best model saved!"
 
 
-if __name__ == "__main__":
-
-    # Initial guess for theta_v
-    initial_theta_v = np.array([1.0])
+def restart_optimise(num_restarts, settings):
+    
+    def objective_function_without_settings(theta_v, grad):
+        return objective_function(theta_v, grad, settings)
 
     # Define bounds for the parameters.
-    lower_bounds = np.array([1e-6])
-    upper_bounds = np.array([10.0])
+    lower_bounds = np.array([settings["lower_bound"]])
+    upper_bounds = np.array([settings["upper_bound"]])
 
-    # Create the optimizer.
-    opt = nlopt.opt(nlopt.LN_BOBYQA, len(initial_theta_v))
+    theta_restart = []
+    hsic_restart = []
+    
+    for restart in range(num_restarts):
+        print(f"Restart number {restart}.")
+        initial_theta_v = np.random.uniform(lower_bounds, upper_bounds)
+        # Create the optimizer.
+        opt = nlopt.opt(nlopt.LN_BOBYQA, len(initial_theta_v))
+        # Set bounds.
+        opt.set_lower_bounds(lower_bounds)
+        opt.set_upper_bounds(upper_bounds)
+        # Set the objective function, we want the maximum of e-HSIC.
+        opt.set_max_objective(objective_function_without_settings)
+        # Set the number max of iterations.
+        opt.set_maxeval(settings["max_eval"])
+        opt.set_ftol_rel(1e-6)
+        opt.set_ftol_abs(1e-6)
+        opt.set_xtol_rel(1e-6)
+        opt.set_xtol_abs(1e-6)
+        # Actually solve
+        theta_v_opt = opt.optimize(initial_theta_v)
+        theta_restart.append(theta_v_opt)
+        maximum_hsic = opt.last_optimum_value()
+        hsic_restart.append(maximum_hsic)
 
-    # Set bounds.
-    opt.set_lower_bounds(lower_bounds)
-    opt.set_upper_bounds(upper_bounds)
-
-    # Set the objective function, we want the maximum of e-HSIC.
-    opt.set_max_objective(objective_function)
-
-    # Set the number max of iterations.
-    opt.set_maxeval(100)
-    opt.set_xtol_rel(1e-6)
-
-    # Actually solve
-    theta_v_opt = opt.optimize(initial_theta_v)
-
+    best_theta = theta_restart[hsic_restart.index(max(hsic_restart))]
     # Compute and save the best model
-    string = last_train(theta_v_opt[0])
+    string = last_train(best_theta[0], settings)
+    
 
-    print(string)
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Argparse for BOBYQA optimisation.')
+    parser.add_argument('--case_number', type=int)
+    parser.add_argument('--size', type=int)
+    parser.add_argument('--dim', type=int)
+    parser.add_argument('--seed', type=int)
+    parser.add_argument('--l_bound', type=float)
+    parser.add_argument('--u_bound', type=float)
+    parser.add_argument('--max_eval', type=int)
+    parser.add_argument('--n_restarts', type=int)
+    args = parser.parse_args()
+
+    print(f"Starting optimisation for seed {args.seed}")
+    
+    # Create filesystem object
+    S3_ENDPOINT_URL = "https://" + os.environ["AWS_S3_ENDPOINT"]
+
+    settings = {
+        "delta": 1e-3,
+        "lambda2": 1,
+        "problem": "Liang",
+        "case_number": args.case_number,
+        "sample_size": args.size,
+        "sample_dim": args.dim,
+        "seed": args.seed,
+        "fs": s3fs.S3FileSystem(client_kwargs={"endpoint_url": S3_ENDPOINT_URL}),
+        "lower_bound": args.l_bound,
+        "upper_bound": args.u_bound,
+        "max_eval": args.max_eval,
+    }
+
+    restart_optimise(num_restarts=args.n_restarts, settings=settings)
+
+
