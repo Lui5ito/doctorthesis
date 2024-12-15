@@ -84,6 +84,19 @@ if __name__ == "__main__":
 
                                         axs[ax_index].scatter(length_scale_list, train_hsic, color="blue", label="Training Data", alpha=0.7, marker='o', s=40)
                                         axs[ax_index].scatter(length_scale_list, calibration_hsic, color="red", label="Calibration Data", alpha=0.7, marker='x', s=40)
+                                        # Add vertical lines stopping at the maximum points
+                                        if train_hsic:  # Ensure train_hsic is not empty
+                                            max_train_hsic_index = np.argmax(train_hsic)
+                                            max_train_x = length_scale_list[max_train_hsic_index]
+                                            max_train_y = train_hsic[max_train_hsic_index]
+                                            axs[ax_index].plot([max_train_x, max_train_x], [0, max_train_y], color="blue", linestyle="--", alpha=0.8, label="Max Train HSIC")
+
+                                        if calibration_hsic:  # Ensure calibration_hsic is not empty
+                                            max_cal_hsic_index = np.argmax(calibration_hsic)
+                                            max_cal_x = length_scale_list[max_cal_hsic_index]
+                                            max_cal_y = calibration_hsic[max_cal_hsic_index]
+                                            axs[ax_index].plot([max_cal_x, max_cal_x], [0, max_cal_y], color="red", linestyle="--", alpha=0.8, label="Max Cal HSIC")
+
                                         axs[ax_index].set_title(f"Training seed: {seed}; Calibration seed: {calibration_seed}")
                                         axs[ax_index].set_xlabel('Lengthscales')
                                         axs[ax_index].set_ylabel('e-HSIC')
