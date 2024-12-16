@@ -1,81 +1,3061 @@
 nohup: ignoring input
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1e-06/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1e-05/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.0001/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.001/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.01/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.02/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.03/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.04/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.05/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.06/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.07/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.08/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.09/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.1/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.11/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.12/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.13/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.14/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.15/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.16/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.17/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.18/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.19/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.2/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.21/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.22/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.23/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.24/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.25/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.26/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.27/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.28/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.29/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.3/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.31/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.32/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.33/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.34/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.35/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.36/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.37/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.38/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.39/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.4/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.41/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.42/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.43/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.44/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.45/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.46/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.47/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.48/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.49/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.5/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.51/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.52/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.53/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.54/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.55/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.56/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.57/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.58/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.59/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.6/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.61/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.62/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.63/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.64/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.65/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.66/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.67/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.68/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.69/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.7/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.71/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.72/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.73/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.74/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.75/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.76/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.77/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.78/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.79/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.8/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.81/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.82/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.83/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.84/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.85/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.86/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.87/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.88/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.89/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.9/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.91/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.92/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.93/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.94/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.95/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.96/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.97/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.98/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.99/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_123/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1.0/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1e-06/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1e-05/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.0001/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.001/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.01/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.02/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.03/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.04/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.05/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.06/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.07/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.08/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.09/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.1/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.11/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.12/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.13/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.14/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.15/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.16/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.17/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.18/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.19/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.2/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.21/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.22/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.23/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.24/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.25/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.26/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.27/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.28/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.29/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.3/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.31/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.32/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.33/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.34/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.35/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.36/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.37/ already exists. Do not compute.
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 9.966351699 seconds
-   Solver value: 63.360389729334116
+   Solver took: 3.254850591 seconds
+   Solver value: 14.163567748251907
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 9.672047332 seconds
-   Solver value: 63.359243489933704
+   Solver took: 3.114672332 seconds
+   Solver value: 14.094068150061151
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.4/ already exists. Do not compute.
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 10.073505446999999 seconds
-   Solver value: 63.1288004810047
+   Solver took: 3.284685148 seconds
+   Solver value: 13.967198777844187
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 8.206991002 seconds
-   Solver value: 60.3249882923913
+   Solver took: 3.1258696930000003 seconds
+   Solver value: 13.911135433673113
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 4.876001348 seconds
-   Solver value: 67.91821974394536
+   Solver took: 2.952567154 seconds
+   Solver value: 13.859428454203549
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 10.867873981999999 seconds
-   Solver value: 67.91821974400575
+   Solver took: 3.370468068 seconds
+   Solver value: 13.812912647901381
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 11.864965731 seconds
-   Solver value: 67.91326782004312
+   Solver took: 3.025135004 seconds
+   Solver value: 13.770519398541003
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.46/ already exists. Do not compute.
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 13.015556639 seconds
-   Solver value: 66.05603920688841
+   Solver took: 2.944737211 seconds
+   Solver value: 13.69755276215175
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 5.512469823 seconds
-   Solver value: 43.73113909499491
+   Solver took: 3.293459682 seconds
+   Solver value: 13.66550391503312
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 6.96575743 seconds
-   Solver value: 43.731136976955874
+   Solver took: 3.45952144 seconds
+   Solver value: 13.635185302970353
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.5/ already exists. Do not compute.
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 7.579142842 seconds
-   Solver value: 43.601430175826884
+   Solver took: 5.254187205999999 seconds
+   Solver value: 13.581173381283019
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 9.912179094999999 seconds
-   Solver value: 43.160378135590236
+   Solver took: 3.368992141 seconds
+   Solver value: 13.553881958368859
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 3.323133894 seconds
-   Solver value: 99.08557557602616
+   Solver took: 3.5376802740000004 seconds
+   Solver value: 13.530762043699434
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 5.230952264 seconds
-   Solver value: 99.07780166274463
+   Solver took: 3.64339907 seconds
+   Solver value: 13.508629192646103
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 5.412494047 seconds
-   Solver value: 99.0718829448938
+   Solver took: 3.736688908 seconds
+   Solver value: 13.488857486719127
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 5.656179992999999 seconds
-   Solver value: 96.85176155614137
+   Solver took: 3.611902132 seconds
+   Solver value: 13.46988802370685
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 2.3570288930000003 seconds
-   Solver value: 70.08984886729031
+   Solver took: 3.7196321830000003 seconds
+   Solver value: 13.452623687666032
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 7.568934527000001 seconds
-   Solver value: 70.08984886732937
+   Solver took: 3.693442715 seconds
+   Solver value: 13.437006358437912
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 7.907243541 seconds
-   Solver value: 70.04881782438643
+   Solver took: 3.637326103 seconds
+   Solver value: 13.422477868684796
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.6/ already exists. Do not compute.
 Start solving the SDP problem !
    Solver status: optimal
-   Solver took: 9.946386452 seconds
-   Solver value: 68.68232144674211
+   Solver took: 3.7273846109999997 seconds
+   Solver value: 13.396516023719753
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.8428908579999996 seconds
+   Solver value: 13.38447350290986
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.568496592 seconds
+   Solver value: 13.373641212207819
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.6866533340000003 seconds
+   Solver value: 13.36371870419319
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.596609601 seconds
+   Solver value: 13.354709618607046
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.7943345799999997 seconds
+   Solver value: 13.346515551583517
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.6921089670000002 seconds
+   Solver value: 13.3391211940368
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.732354156 seconds
+   Solver value: 13.332967620080508
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.749303808 seconds
+   Solver value: 13.32707390345913
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.7/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.928368912 seconds
+   Solver value: 13.316049696316446
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.97104756 seconds
+   Solver value: 13.310214122559177
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.898860049 seconds
+   Solver value: 13.304094060404996
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.885636841 seconds
+   Solver value: 13.297645825742876
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.739150161 seconds
+   Solver value: 13.290878194761198
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.830229044 seconds
+   Solver value: 13.283822936248765
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.746543057 seconds
+   Solver value: 13.276413810517614
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.923546766 seconds
+   Solver value: 13.268598583866616
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.703100258 seconds
+   Solver value: 13.26040015050273
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.8/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.662909983 seconds
+   Solver value: 13.24257474973965
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.731797172 seconds
+   Solver value: 13.232998559375467
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.86481963 seconds
+   Solver value: 13.223421937520685
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.752064025 seconds
+   Solver value: 13.212911458464419
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.481308117 seconds
+   Solver value: 13.201970517282556
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.692411951 seconds
+   Solver value: 13.19050859372394
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.546138982 seconds
+   Solver value: 13.178538115712643
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.539337069 seconds
+   Solver value: 13.166017209912537
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.470533374 seconds
+   Solver value: 13.15293657100353
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.9/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.7036554109999997 seconds
+   Solver value: 13.125157503475819
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.44892535 seconds
+   Solver value: 13.110445164720252
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.330184697 seconds
+   Solver value: 13.095165587790515
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.109224899 seconds
+   Solver value: 13.079635649028877
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.800149908 seconds
+   Solver value: 13.063208891134522
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.866693045 seconds
+   Solver value: 13.04621692747201
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.947845671 seconds
+   Solver value: 13.028656084534674
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.538399804 seconds
+   Solver value: 13.010510791924617
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.714485867 seconds
+   Solver value: 12.991498441004296
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_124/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1.0/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1e-06/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1e-05/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.0001/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.001/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.868540248 seconds
+   Solver value: 33.97198145638832
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.506463226 seconds
+   Solver value: 25.755151399060935
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.496562578 seconds
+   Solver value: 21.182156452202015
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.024468814 seconds
+   Solver value: 18.515252891015585
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.053752545 seconds
+   Solver value: 16.58283433154351
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.221824637 seconds
+   Solver value: 15.204164149453446
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.5608913739999997 seconds
+   Solver value: 14.288743034477593
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.051414573 seconds
+   Solver value: 13.661213522518006
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.046496429 seconds
+   Solver value: 13.151247008036105
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.1/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.9162057439999998 seconds
+   Solver value: 12.277258851490895
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.826633872 seconds
+   Solver value: 11.863115388156597
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.9172892900000003 seconds
+   Solver value: 11.456222751577616
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.128016201 seconds
+   Solver value: 11.06428115246575
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.2438932999999999 seconds
+   Solver value: 10.709625071413498
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.2677264249999998 seconds
+   Solver value: 10.395740318986388
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.283694048 seconds
+   Solver value: 10.117763558482153
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.267119612 seconds
+   Solver value: 9.871876341914328
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.406713513 seconds
+   Solver value: 9.657291266728187
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.2/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.899036482 seconds
+   Solver value: 9.31147183517858
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.6903564759999998 seconds
+   Solver value: 9.169789896096926
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.812752984 seconds
+   Solver value: 9.045167469442333
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.761768971 seconds
+   Solver value: 8.932906993316191
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.846306608 seconds
+   Solver value: 8.82894294200323
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.0458196 seconds
+   Solver value: 8.731416088725261
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.44232299 seconds
+   Solver value: 8.63844894673236
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.256726432 seconds
+   Solver value: 8.551211747087208
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.2635376280000001 seconds
+   Solver value: 8.468799714602383
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.3/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.2654636780000001 seconds
+   Solver value: 8.320045294203151
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.140595719 seconds
+   Solver value: 8.25379004635168
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.545077917 seconds
+   Solver value: 8.192946509754423
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.456559151 seconds
+   Solver value: 8.136131842733596
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.830656163 seconds
+   Solver value: 8.083481808011678
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.9467286979999998 seconds
+   Solver value: 8.032957028930209
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.83020976 seconds
+   Solver value: 7.985371173086843
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.7103880939999998 seconds
+   Solver value: 7.939633957124184
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.6767890360000002 seconds
+   Solver value: 7.895926438748025
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.4/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.028276106 seconds
+   Solver value: 7.816093456572375
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.662292103 seconds
+   Solver value: 7.779732779726416
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.852654094 seconds
+   Solver value: 7.745294793014667
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.419674769 seconds
+   Solver value: 7.715186623989558
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.2571960409999998 seconds
+   Solver value: 7.686886556745469
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.227079994 seconds
+   Solver value: 7.661174343708795
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.248707585 seconds
+   Solver value: 7.637028301386916
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.3791716099999998 seconds
+   Solver value: 7.616511724083859
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.5106862449999998 seconds
+   Solver value: 7.598712640571588
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.5/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.777109477 seconds
+   Solver value: 7.566124392518317
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.4580965879999999 seconds
+   Solver value: 7.552531851620055
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.847712487 seconds
+   Solver value: 7.538246711353591
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.436086444 seconds
+   Solver value: 7.52679278306624
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.561033502 seconds
+   Solver value: 7.514141135308865
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.2736184309999998 seconds
+   Solver value: 7.502292710680322
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.238999254 seconds
+   Solver value: 7.491533029287634
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.291963416 seconds
+   Solver value: 7.481003905500825
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.253616421 seconds
+   Solver value: 7.47123850329805
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.6/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.420191462 seconds
+   Solver value: 7.451124528336365
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.2557103299999999 seconds
+   Solver value: 7.441779580216561
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.232466866 seconds
+   Solver value: 7.432032816562128
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.2474623489999999 seconds
+   Solver value: 7.4220796200723065
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.294824376 seconds
+   Solver value: 7.411881459517655
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.318430904 seconds
+   Solver value: 7.4015081306210915
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.272258887 seconds
+   Solver value: 7.3907342627157036
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.2429900139999999 seconds
+   Solver value: 7.379568229171266
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.222592202 seconds
+   Solver value: 7.368077156301999
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.7/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.329808419 seconds
+   Solver value: 7.3436588934953715
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.412683118 seconds
+   Solver value: 7.331120906611399
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.242396763 seconds
+   Solver value: 7.317999982694641
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.288627691 seconds
+   Solver value: 7.3051628617534305
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.386111161 seconds
+   Solver value: 7.290315131324789
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.2378309429999999 seconds
+   Solver value: 7.277104138998164
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.2203475819999998 seconds
+   Solver value: 7.262367962919348
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.131544113 seconds
+   Solver value: 7.246953043476873
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.10690192 seconds
+   Solver value: 7.231484493790502
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.8/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.222305279 seconds
+   Solver value: 7.198898710960333
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.221291698 seconds
+   Solver value: 7.1818770984270515
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.215580921 seconds
+   Solver value: 7.164337293235974
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.0736114700000001 seconds
+   Solver value: 7.146565299953847
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 0.9991012469999999 seconds
+   Solver value: 7.128155125655438
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 0.996512305 seconds
+   Solver value: 7.109263531414863
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 0.90363068 seconds
+   Solver value: 7.090083701590272
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 0.748327466 seconds
+   Solver value: 7.069870928804269
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 0.7421937430000001 seconds
+   Solver value: 7.049637638407344
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.9/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 0.816446812 seconds
+   Solver value: 7.008200987006825
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 0.877020609 seconds
+   Solver value: 6.986910751067333
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 0.7448826249999999 seconds
+   Solver value: 6.965253070596599
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 0.7425342739999999 seconds
+   Solver value: 6.943284474970979
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.228988511 seconds
+   Solver value: 6.922720585316474
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.4485251149999998 seconds
+   Solver value: 6.900258551834272
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.352792813 seconds
+   Solver value: 6.877484202714437
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.3906927169999999 seconds
+   Solver value: 6.854403309066519
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.242749788 seconds
+   Solver value: 6.830917877503904
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_125/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1.0/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1e-06/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1e-05/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.0001/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.001/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.813130504 seconds
+   Solver value: 76.94135246166208
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.429129021 seconds
+   Solver value: 65.82281061015703
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.8702178819999995 seconds
+   Solver value: 58.60395647027459
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.595980495 seconds
+   Solver value: 52.89783763171481
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.871332327 seconds
+   Solver value: 47.95336183475812
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.908311533 seconds
+   Solver value: 43.865851077993526
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.203482929 seconds
+   Solver value: 40.45794000567508
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.443020208 seconds
+   Solver value: 37.58388976450584
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.796316233 seconds
+   Solver value: 35.1898702791957
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.1/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.145536489 seconds
+   Solver value: 31.410480277309972
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.766142490999999 seconds
+   Solver value: 29.877516941946617
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.2824789 seconds
+   Solver value: 28.537657452020945
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.509445432000001 seconds
+   Solver value: 27.369418394274415
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.732056372 seconds
+   Solver value: 26.347034921174355
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.080901827 seconds
+   Solver value: 25.448543714485616
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.394836553 seconds
+   Solver value: 24.66945870058397
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 8.301976630999999 seconds
+   Solver value: 23.991612057004446
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 10.923811401 seconds
+   Solver value: 23.395323243718934
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.2/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 9.098021658 seconds
+   Solver value: 22.38241568605812
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.453324053999999 seconds
+   Solver value: 21.936507369969558
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.279876052 seconds
+   Solver value: 21.524163088406123
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.938863782 seconds
+   Solver value: 21.145278832289826
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.016348363 seconds
+   Solver value: 20.787720066776476
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.808001125 seconds
+   Solver value: 20.4505661680005
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.9060720470000003 seconds
+   Solver value: 20.13615253253632
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.787355867 seconds
+   Solver value: 19.842300267578008
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.021104199 seconds
+   Solver value: 19.575396052479082
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.3/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.910723783 seconds
+   Solver value: 19.115469612974394
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.036375314 seconds
+   Solver value: 18.917008066121827
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.903869761 seconds
+   Solver value: 18.737001019055334
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.443305284 seconds
+   Solver value: 18.576499604638663
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.25213192 seconds
+   Solver value: 18.431687738893462
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.827723258 seconds
+   Solver value: 18.302022605303172
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.689411285 seconds
+   Solver value: 18.18628297927188
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.103879903 seconds
+   Solver value: 18.083257786188593
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.746204883000001 seconds
+   Solver value: 17.99173091387021
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.4/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.696154704 seconds
+   Solver value: 17.838134581783038
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.159697242 seconds
+   Solver value: 17.77364212827694
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.407303861 seconds
+   Solver value: 17.716837731759398
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.550832528 seconds
+   Solver value: 17.664197855646815
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.437107966 seconds
+   Solver value: 17.61721361394865
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.226341117 seconds
+   Solver value: 17.57427969637044
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.206651021 seconds
+   Solver value: 17.534638645316168
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.088163635 seconds
+   Solver value: 17.497884316926484
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.139699694 seconds
+   Solver value: 17.463606568668354
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.5/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.235403842 seconds
+   Solver value: 17.401441849788007
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.840476737 seconds
+   Solver value: 17.372376550981397
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.804525583 seconds
+   Solver value: 17.344992624333152
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.97430285 seconds
+   Solver value: 17.318858901694746
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.411214674 seconds
+   Solver value: 17.29319289607433
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.890202339 seconds
+   Solver value: 17.268296964409036
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.775521429 seconds
+   Solver value: 17.241490367422493
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.038013842000001 seconds
+   Solver value: 17.217838768967006
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.033037093 seconds
+   Solver value: 17.192417887375786
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.6/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 8.231706119 seconds
+   Solver value: 17.139412105682226
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.621916008 seconds
+   Solver value: 17.11163851487241
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 9.150627850000001 seconds
+   Solver value: 17.083610583620708
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.147960319 seconds
+   Solver value: 17.05405900789844
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.666501851 seconds
+   Solver value: 17.024172414583226
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.722639582 seconds
+   Solver value: 16.993342444274013
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 8.673510897 seconds
+   Solver value: 16.961009404125345
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 8.199082598999999 seconds
+   Solver value: 16.927533021391064
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.816714383000001 seconds
+   Solver value: 16.892253440179193
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.7/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.992575522 seconds
+   Solver value: 16.81970497349905
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 11.336711166999999 seconds
+   Solver value: 16.782166468585224
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 9.442472886 seconds
+   Solver value: 16.74282834108162
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 8.32184958 seconds
+   Solver value: 16.702448999203806
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 8.383024208999998 seconds
+   Solver value: 16.66074195106758
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 9.920237891000001 seconds
+   Solver value: 16.617941774302533
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 8.057127643 seconds
+   Solver value: 16.57313142504826
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 8.143924522 seconds
+   Solver value: 16.52887773479158
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.589556494 seconds
+   Solver value: 16.482681133614022
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.8/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 8.080734368 seconds
+   Solver value: 16.38674511371905
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.768481211 seconds
+   Solver value: 16.337496004983507
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.171658056 seconds
+   Solver value: 16.286688527530107
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 8.118800788 seconds
+   Solver value: 16.235063613978202
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.4238880929999995 seconds
+   Solver value: 16.183459658824088
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.7553535490000005 seconds
+   Solver value: 16.12971586700854
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.020071487999999 seconds
+   Solver value: 16.076299776002124
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.578997888 seconds
+   Solver value: 16.019895595442833
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.40227741 seconds
+   Solver value: 15.963720985162798
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.9/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.633042223 seconds
+   Solver value: 15.850773318452692
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.8019199509999995 seconds
+   Solver value: 15.791500660663178
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.447931604000001 seconds
+   Solver value: 15.734259169015095
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.180640809000001 seconds
+   Solver value: 15.674938480267286
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.617390038 seconds
+   Solver value: 15.612997736531712
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.048290205 seconds
+   Solver value: 15.553589901250128
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.218322198 seconds
+   Solver value: 15.4916989932245
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.609145776 seconds
+   Solver value: 15.428997274488644
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.347477646000001 seconds
+   Solver value: 15.368984137425905
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_126/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1.0/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1e-06/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1e-05/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.0001/ already exists. Do not compute.
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.001/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.724572043 seconds
+   Solver value: 56.05039939735808
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 7.748422872 seconds
+   Solver value: 46.131002336780014
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 6.5269962459999995 seconds
+   Solver value: 41.69204069848644
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 5.995209802000001 seconds
+   Solver value: 38.14842282158063
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.286347559 seconds
+   Solver value: 34.78184123428402
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.55454633 seconds
+   Solver value: 31.972483378584155
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.255939289 seconds
+   Solver value: 29.815369155917182
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.2444881379999995 seconds
+   Solver value: 28.18760008487783
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.9898237930000002 seconds
+   Solver value: 26.883691172934647
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.1/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.429560654 seconds
+   Solver value: 24.812570949970617
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.7807220489999995 seconds
+   Solver value: 23.96552306413867
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.58676672 seconds
+   Solver value: 23.198601475089593
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.98313074 seconds
+   Solver value: 22.48465959409328
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.757221203 seconds
+   Solver value: 21.822323886971713
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.069619449 seconds
+   Solver value: 21.214424868132884
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.532931673 seconds
+   Solver value: 20.665625850423886
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.338399905 seconds
+   Solver value: 20.17179590104556
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 4.790476903 seconds
+   Solver value: 19.73339288951912
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.2/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.206883329 seconds
+   Solver value: 18.959805069346256
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.657856268 seconds
+   Solver value: 18.60329675305301
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.8640418330000004 seconds
+   Solver value: 18.26162074780528
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.636976405 seconds
+   Solver value: 17.93325591907643
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.89971749 seconds
+   Solver value: 17.61905966099549
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.280698251 seconds
+   Solver value: 17.31873722186807
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.8883848480000003 seconds
+   Solver value: 17.033399683111018
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.776492877 seconds
+   Solver value: 16.763690503759555
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.4995151719999997 seconds
+   Solver value: 16.50706026372443
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.3/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.251198794 seconds
+   Solver value: 16.02898008728767
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.224381754 seconds
+   Solver value: 15.80515118942846
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.923672743 seconds
+   Solver value: 15.594355661824236
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.2784789259999996 seconds
+   Solver value: 15.399460614863784
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.070772016 seconds
+   Solver value: 15.212940810293546
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.555728819 seconds
+   Solver value: 15.043090657281518
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.119390331 seconds
+   Solver value: 14.883678978842454
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.101105272 seconds
+   Solver value: 14.73315191698382
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.460627328 seconds
+   Solver value: 14.59448769033784
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.4/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.099633253 seconds
+   Solver value: 14.342358742815179
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.4378366000000002 seconds
+   Solver value: 14.23021937107307
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.442798699 seconds
+   Solver value: 14.124503066299173
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.4476822040000004 seconds
+   Solver value: 14.027478721777664
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.285327945 seconds
+   Solver value: 13.935708106165375
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.3878982 seconds
+   Solver value: 13.850860857834567
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.132487407 seconds
+   Solver value: 13.77267570502948
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.194975683 seconds
+   Solver value: 13.7001509731469
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.3928272170000002 seconds
+   Solver value: 13.632658317097157
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.5/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.307128429 seconds
+   Solver value: 13.511555713538772
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.5049327079999997 seconds
+   Solver value: 13.458537652134993
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.6077313519999996 seconds
+   Solver value: 13.40589050381513
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.965267823 seconds
+   Solver value: 13.360684029083409
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.455479661 seconds
+   Solver value: 13.316036127647251
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 3.2045715230000003 seconds
+   Solver value: 13.2747627075513
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.535039324 seconds
+   Solver value: 13.23803735562991
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.8847298209999999 seconds
+   Solver value: 13.200547766827047
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.1340261970000003 seconds
+   Solver value: 13.163543438337332
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.6/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.499570113 seconds
+   Solver value: 13.093089913141167
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.43121052 seconds
+   Solver value: 13.061127244415573
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.277993738 seconds
+   Solver value: 13.028427160830773
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.287739389 seconds
+   Solver value: 12.9945410027754
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.2298290699999996 seconds
+   Solver value: 12.963390288123882
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.759207735 seconds
+   Solver value: 12.932024143199184
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.357394217 seconds
+   Solver value: 12.904413578894836
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.84972957 seconds
+   Solver value: 12.8744781367579
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.778807699 seconds
+   Solver value: 12.844119006581035
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.7/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.409930895 seconds
+   Solver value: 12.786843992189542
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.539003937 seconds
+   Solver value: 12.758148414619669
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.437815055 seconds
+   Solver value: 12.729443137775743
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.755891261 seconds
+   Solver value: 12.700177488498394
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.560478519 seconds
+   Solver value: 12.6717069349774
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.5627259589999998 seconds
+   Solver value: 12.643224036416013
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.573386306 seconds
+   Solver value: 12.614721257896708
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.567944921 seconds
+   Solver value: 12.58619549753541
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.792495686 seconds
+   Solver value: 12.558654722755486
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.8/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.853357626 seconds
+   Solver value: 12.501012399023168
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.7155461559999998 seconds
+   Solver value: 12.471954185097225
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.758608913 seconds
+   Solver value: 12.44270525090896
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.748520111 seconds
+   Solver value: 12.413246543621558
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.5512669350000001 seconds
+   Solver value: 12.383560994691141
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.856243758 seconds
+   Solver value: 12.35363475761344
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.867830521 seconds
+   Solver value: 12.323473729246928
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.8714948530000002 seconds
+   Solver value: 12.29310055544146
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.937192422 seconds
+   Solver value: 12.262399915198003
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_0.9/ already exists. Do not compute.
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.335634 seconds
+   Solver value: 12.199999502609465
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.1517951199999996 seconds
+   Solver value: 12.168403923966697
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.214410432 seconds
+   Solver value: 12.136504130064726
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.0574042770000003 seconds
+   Solver value: 12.10429583413389
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.869096606 seconds
+   Solver value: 12.071613781280274
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 2.011241658 seconds
+   Solver value: 12.038700060919599
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.8653580630000002 seconds
+   Solver value: 12.005499955843085
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.957319673 seconds
+   Solver value: 11.972007267313884
+Start solving the SDP problem !
+   Solver status: optimal
+   Solver took: 1.5578818019999998 seconds
+   Solver value: 11.93858835697193
+File luisito/these/sb_experiments/sdp_simultaneous/data_case_5/sample_shape_(100,1)/seed_127/problem_Liang/lambda2_1/delta_0.001/variance_lengthscale_1.0/ already exists. Do not compute.
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Start calibration !
+Traceback (most recent call last):
+  File "/home/onyxia/work/thesis/sb_experiments/plot_hsic.py", line 40, in <module>
+    figs, axs[ax_index] = plt.subplots(len(all_sample_seeds), len(calibration_all_sample_seeds), figsize=(10*len(all_sample_seeds), 8*len(calibration_all_sample_seeds)))
+          ^^^
+NameError: name 'axs' is not defined. Did you mean: 'abs'?

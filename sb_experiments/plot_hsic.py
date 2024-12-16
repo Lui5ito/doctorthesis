@@ -27,7 +27,7 @@ if __name__ == "__main__":
     cases = [5]
     all_sample_sizes = [100]
     all_sample_dims = [1]
-    all_sample_seeds = [123]
+    all_sample_seeds = [123, 124, 125, 126, 127]
 
     # Which calibration data
     calibration_cases = [5]
@@ -37,8 +37,8 @@ if __name__ == "__main__":
     calibration_all_alphas = [0.05]
 
     # Initilalise the plot
-    figs, axs = plt.subplots(len(all_sample_seeds), len(calibration_all_sample_seeds), figsize=(12, 10))
-    #axs = axs.flatten()
+    figs, axs= plt.subplots(1, len(all_sample_seeds), figsize=(12*len(all_sample_seeds), 10))
+    axs = axs.flatten()
     ax_index = 0
 
     for case_number in cases:
@@ -82,37 +82,34 @@ if __name__ == "__main__":
 
                                         # Plot every time we finish all set of lengthscales.
 
-                                        axs.scatter(length_scale_list, train_hsic, color="blue", label="Training Data", alpha=0.7, marker='o', s=40)
-                                        axs.scatter(length_scale_list, calibration_hsic, color="red", label="Calibration Data", alpha=0.7, marker='x', s=40)
+                                        axs[ax_index].scatter(length_scale_list, train_hsic, color="blue", label="Training Data", alpha=0.7, marker='o', s=40)
+                                        axs[ax_index].scatter(length_scale_list, calibration_hsic, color="red", label="Calibration Data", alpha=0.7, marker='x', s=40)
                                         # Add vertical lines stopping at the maximum points
                                         if train_hsic:  # Ensure train_hsic is not empty
                                             max_train_hsic_index = np.argmax(train_hsic)
                                             max_train_x = length_scale_list[max_train_hsic_index]
                                             max_train_y = train_hsic[max_train_hsic_index]
-                                            axs.plot([max_train_x, max_train_x], [0, max_train_y], color="blue", linestyle="--", alpha=0.8, label="Max Train HSIC")
+                                            axs[ax_index].plot([max_train_x, max_train_x], [0, max_train_y], color="blue", linestyle="--", alpha=0.8, label="Max Train HSIC")
 
                                         if calibration_hsic:  # Ensure calibration_hsic is not empty
                                             max_cal_hsic_index = np.argmax(calibration_hsic)
                                             max_cal_x = length_scale_list[max_cal_hsic_index]
                                             max_cal_y = calibration_hsic[max_cal_hsic_index]
-                                            axs.plot([max_cal_x, max_cal_x], [0, max_cal_y], color="red", linestyle="--", alpha=0.8, label="Max Cal HSIC")
+                                            axs[ax_index].plot([max_cal_x, max_cal_x], [0, max_cal_y], color="red", linestyle="--", alpha=0.8, label="Max Cal HSIC")
 
-                                        axs.set_title(f"Training seed: {seed}; Calibration seed: {calibration_seed}")
-                                        axs.set_xlabel('Lengthscales')
-                                        axs.set_ylabel('e-HSIC')
-                                        axs.grid(True, linestyle='--', alpha=0.5)
-                                        axs.set_xticks(length_scale_list)
-                                        plt.xticks(rotation=45)
-                                        axs.tick_params(axis='x', labelsize=6)
-                                        axs.legend(loc="upper right", fontsize="small", framealpha=0.8)
+                                        axs[ax_index].set_title(f"Training seed: {seed}; Calibration seed: {calibration_seed}")
+                                        axs[ax_index].set_xlabel('Lengthscales')
+                                        axs[ax_index].set_ylabel('e-HSIC')
+                                        axs[ax_index].grid(True, linestyle='--', alpha=0.3)
+                                        axs[ax_index].set_xticks(length_scale_list)
+                                        axs[ax_index].tick_params(axis='x', labelsize=5, labelrotation = 45)
+                                        axs[ax_index].legend(loc="upper right", fontsize="small", framealpha=0.8)
                                         ax_index += 1
-    
+
     # Finish the figure and save
-    figs.suptitle('e-HSIC vs lengthscales for multiple seeds and both calibration and training data.', x=0.5, y=0.99, size = 16, weight = 'bold')
+    figs.suptitle('e-HSIC vs lengthscales for multiple seeds and both calibration and training data.', x=0.5, y=0.999, size = 16, weight = 'bold')
     figs.tight_layout()
 
-    FILE_PATH_OUT_S3 = "luisito/these/sb_experiments/images/" + f"e-HISC_vs_Lengthscales_training_{seed}_calibration_{calibration_seed}.pdf"
+    FILE_PATH_OUT_S3 = "luisito/these/sb_experiments/images/" + f"e-HISC_vs_Lengthscales_allTraining_oneCalibration.pdf"
     with fs.open(FILE_PATH_OUT_S3, mode="wb") as file_out:
         figs.savefig(file_out, format="pdf", transparent=True, dpi=600)
-
-                        
