@@ -1,0 +1,1 @@
+python optimise_ehsic_on_calibration_data.py --case_number 5 --size 100 --dim 1 --seed 123 --l_bound 1e-8 --u_bound 10 --max_eval 2 --n_restarts 2 --cal_case_number 5 --cal_size 100 --cal_dim 1 --cal_seed 321

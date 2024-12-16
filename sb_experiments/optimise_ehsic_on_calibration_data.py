@@ -97,6 +97,14 @@ def objective_function(theta_v, grad, settings):
     sample_dim = settings["sample_dim"]
     seed = settings["seed"]
 
+    # Define calibration data
+    cal_case_number = settings["cal_case_number"]
+    cal_sample_size = settings["cal_sample_size"]
+    cal_sample_dim = settings["cal_sample_dim"]
+    cal_seed = settings["cal_seed"]
+
+    alpha=settings["alpha"]
+
     fs = settings["fs"]
 
     # Retrieve data path
@@ -112,6 +120,15 @@ def objective_function(theta_v, grad, settings):
         data = np.load(file_in)
         X_train = data["X"]
         y_train = data["y"]
+    
+    # Retrieve data path
+    data_FOLDER_PATH_IN_S3 = f"luisito/these/sb_experiments/data/case_{cal_case_number}/sample_shape_({cal_sample_size},{cal_sample_dim})/seed_{cal_seed}/"
+    data_FILE_PATH_IN_S3 = data_FOLDER_PATH_IN_S3 + "data.npz"
+    # Retrieve data
+    with fs.open(data_FILE_PATH_IN_S3, mode="rb") as file_in:
+        data = np.load(file_in)
+        X_cal = data["X"]
+        y_cal = data["y"]
 
     # Retrieve gp model path
     gp_FOLDER_PATH_IN_S3 = f"luisito/these/sb_experiments/gp/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/"
@@ -138,12 +155,14 @@ def objective_function(theta_v, grad, settings):
     # Train the model
     sdp_model.train(X=X_train, y=y_train)
     # Compute HSIC
-    train_hsic = HSIC(X_train, y_train, sdp_model)
-    print(f"INSIDE OBJ - Obtained HSIC: {train_hsic}")
+    sdp_model.calibrate(X=X_cal, y=y_cal, alpha=alpha, metric_list=["energy_hsic"])
+    calibration_hsic = sdp_model.metrics["energy_hsic"]
+    print(f"INSIDE OBJ - Obtained HSIC: {calibration_hsic}")
 
-    associated_hsic.append(train_hsic)
 
-    return train_hsic
+    associated_hsic.append(calibration_hsic)
+
+    return calibration_hsic
 
 
 def last_train(theta_v, settings):
@@ -158,17 +177,33 @@ def last_train(theta_v, settings):
     sample_dim = settings["sample_dim"]
     seed = settings["seed"]
 
+    # Define calibration data
+    cal_case_number = settings["cal_case_number"]
+    cal_sample_size = settings["cal_sample_size"]
+    cal_sample_dim = settings["cal_sample_dim"]
+    cal_seed = settings["cal_seed"]
+
+    alpha=settings["alpha"]
+
     fs = settings["fs"]
 
     # Retrieve data path
     data_FOLDER_PATH_IN_S3 = f"luisito/these/sb_experiments/data/case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/"
     data_FILE_PATH_IN_S3 = data_FOLDER_PATH_IN_S3 + "data.npz"
-
     # Retrieve data
     with fs.open(data_FILE_PATH_IN_S3, mode="rb") as file_in:
         data = np.load(file_in)
         X_train = data["X"]
         y_train = data["y"]
+    
+    # Retrieve data path
+    data_FOLDER_PATH_IN_S3 = f"luisito/these/sb_experiments/data/case_{cal_case_number}/sample_shape_({cal_sample_size},{cal_sample_dim})/seed_{cal_seed}/"
+    data_FILE_PATH_IN_S3 = data_FOLDER_PATH_IN_S3 + "data.npz"
+    # Retrieve data
+    with fs.open(data_FILE_PATH_IN_S3, mode="rb") as file_in:
+        data = np.load(file_in)
+        X_cal = data["X"]
+        y_cal = data["y"]
 
     # Retrieve gp model path
     gp_FOLDER_PATH_IN_S3 = f"luisito/these/sb_experiments/gp/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/"
@@ -192,9 +227,10 @@ def last_train(theta_v, settings):
     # Train the model
     sdp_model.train(X=X_train, y=y_train)
     # Compute HSIC
-    train_hsic = HSIC(X_train, y_train, sdp_model)
+    sdp_model.calibrate(X=X_cal, y=y_cal, alpha=alpha, metric_list=["energy_hsic"])
+    calibration_hsic = sdp_model.metrics["energy_hsic"]
 
-    FOLDER_PATH_OUT_S3 = f"luisito/these/sb_experiments/optimise_lengthscale/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/problem_{problem}/lambda2_{lambda2}/delta_{delta}/on_training/"
+    FOLDER_PATH_OUT_S3 = f"luisito/these/sb_experiments/optimise_lengthscale/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/problem_{problem}/lambda2_{lambda2}/delta_{delta}/on_calibration/data_case_{cal_case_number}/sample_shape_({cal_sample_size},{cal_sample_dim})/seed_{cal_seed}/"
 
     # Save SDP params
     FILE_PATH_OUT_S3_PARAMS = FOLDER_PATH_OUT_S3 + "all_parameters.json"
@@ -204,6 +240,11 @@ def last_train(theta_v, settings):
             "shape": (sample_size, sample_dim),
             "seed": seed,
         },
+        "calibration_data": {
+            "data_case": cal_case_number,
+            "shape": (cal_sample_size, cal_sample_dim),
+            "seed": cal_seed,
+        },
         "input_parameters": {
             "problem": problem,
             "theta_m": theta_m,
@@ -212,7 +253,7 @@ def last_train(theta_v, settings):
             "delta": delta,
         },
         "output_parameters": {
-            "training_hsic": train_hsic,
+            "calibration_hsic": calibration_hsic,
             "solver_min": sdp_model.solver_min,
             "solver_state": sdp_model.solver_state,
             "solver_time": sdp_model.solver_time,
@@ -236,7 +277,7 @@ def last_train(theta_v, settings):
 
 
 def restart_optimise(num_restarts, settings):
-    
+
     def objective_function_without_settings(theta_v, grad):
         return objective_function(theta_v, grad, settings)
 
@@ -246,7 +287,7 @@ def restart_optimise(num_restarts, settings):
 
     theta_restart = []
     hsic_restart = []
-    
+
     for restart in range(num_restarts):
         print(f"Restart number {restart}.")
         initial_theta_v = np.random.uniform(lower_bounds, upper_bounds)
@@ -286,6 +327,10 @@ if __name__ == "__main__":
     parser.add_argument('--u_bound', type=float)
     parser.add_argument('--max_eval', type=int)
     parser.add_argument('--n_restarts', type=int)
+    parser.add_argument('--cal_case_number', type=int)
+    parser.add_argument('--cal_size', type=int)
+    parser.add_argument('--cal_dim', type=int)
+    parser.add_argument('--cal_seed', type=int)
     args = parser.parse_args()
 
     print(f"Starting optimisation for seed {args.seed}")
@@ -297,6 +342,7 @@ if __name__ == "__main__":
         "delta": 1e-3,
         "lambda2": 1,
         "problem": "Liang",
+        "alpha": 0.05,
         "case_number": args.case_number,
         "sample_size": args.size,
         "sample_dim": args.dim,
@@ -305,6 +351,10 @@ if __name__ == "__main__":
         "lower_bound": args.l_bound,
         "upper_bound": args.u_bound,
         "max_eval": args.max_eval,
+        "cal_case_number": args.cal_case_number,
+        "cal_sample_size": args.cal_size,
+        "cal_sample_dim": args.cal_dim,
+        "cal_seed": args.cal_seed,
     }
 
     restart_optimise(num_restarts=args.n_restarts, settings=settings)
