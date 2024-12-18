@@ -86,7 +86,8 @@ if __name__ == "__main__":
     fs = s3fs.S3FileSystem(client_kwargs={"endpoint_url": S3_ENDPOINT_URL})
 
     # Lengthscales to compute
-    length_scale_list = np.append(np.array([1e-6, 1e-5, 1e-4, 1e-3]), np.round(np.linspace(0.01, 1, 100), 3))
+    #length_scale_list = np.append(np.array([1e-6, 1e-5, 1e-4, 1e-3]), np.round(np.linspace(0.01, 1, 100), 3))
+    length_scale_list = np.round(np.linspace(1e-6, 1e-2, 1000), 6)
     delta = 1e-3
     lambda2 = 1
     problem = "Liang"
@@ -95,7 +96,7 @@ if __name__ == "__main__":
     cases = [5]
     all_sample_sizes = [100]
     all_sample_dims = [1]
-    all_sample_seeds = [123, 124, 125, 126, 127]
+    all_sample_seeds = [123]
 
     for case_number in cases:
         for sample_size in all_sample_sizes:
