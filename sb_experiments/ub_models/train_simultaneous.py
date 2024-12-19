@@ -87,7 +87,7 @@ if __name__ == "__main__":
                     # Convert my process function from multiple to ONE argument.
                     process_variance_lengthscale_one_param = partial(process_variance_lengthscale, case_number=case_number, sample_size=sample_size, sample_dim=sample_dim, seed=seed, X_train=X_train, y_train=y_train, theta_m=theta_m, lambda2=lambda2, delta=delta, problem=problem, calibration_data=calibration_data)
 
-                    with Pool(processes=(cpu_count() - 2)) as pool:
+                    with Pool(processes=(cpu_count() - 10)) as pool:
                         results = list(pool.imap(process_variance_lengthscale_one_param, list_lengthscales,))
 
                     # Save whole SDP model
