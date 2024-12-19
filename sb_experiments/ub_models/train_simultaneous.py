@@ -89,7 +89,7 @@ if __name__ == "__main__":
 
                     with Pool(processes=(cpu_count() - 2)) as pool:
                         results = list(pool.imap(process_variance_lengthscale_one_param, list_lengthscales,))
-                    
+
                     # Save whole SDP model
                     for sdp_model, variance_lengthscale in zip(results, list_lengthscales):
                         model_FOLDER_PATH_OUT_S3 = f"luisito/these/sb_experiments/ub_models/simultaneous/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/problem_{problem}/lambda2_{lambda2}/delta_{delta}/variance_lengthscale_{variance_lengthscale}/"
