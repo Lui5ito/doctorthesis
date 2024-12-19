@@ -5,12 +5,12 @@ import pickle
 import os
 import s3fs
 from utils import load_file
-from multiprocessing import Pool, cpu_count
+from multiprocessing import Pool
 from functools import partial
 
 
 def process_variance_lengthscale(variance_lengthscale, case_number, sample_size, sample_dim, seed, X_train, y_train, theta_m, lambda2, delta, problem, calibration_data):
-    
+
     # Define the model
     sdp_model = ub.UniversalFunctionAndBandsRegressor(
         mean_kernel=kernels.Matern(length_scale=theta_m["posterior_lengthscale"], length_scale_bounds=(1e-5, 1e5), nu=2.5),
@@ -41,6 +41,8 @@ if __name__ == "__main__":
     # Create filesystem object
     S3_ENDPOINT_URL = "https://" + os.environ["AWS_S3_ENDPOINT"]
     fs = s3fs.S3FileSystem(client_kwargs={"endpoint_url": S3_ENDPOINT_URL})
+
+    num_processes = 30
 
     # Lengthscales to compute 900
     list_lengthscales = np.round(np.linspace(1e-3, 1, 900), 4)
@@ -87,7 +89,7 @@ if __name__ == "__main__":
                     # Convert my process function from multiple to ONE argument.
                     process_variance_lengthscale_one_param = partial(process_variance_lengthscale, case_number=case_number, sample_size=sample_size, sample_dim=sample_dim, seed=seed, X_train=X_train, y_train=y_train, theta_m=theta_m, lambda2=lambda2, delta=delta, problem=problem, calibration_data=calibration_data)
 
-                    with Pool(processes=(cpu_count() - 10)) as pool:
+                    with Pool(processes=(num_processes)) as pool:
                         results = list(pool.imap(process_variance_lengthscale_one_param, list_lengthscales,))
 
                     # Save whole SDP model
