@@ -42,9 +42,7 @@ if __name__ == "__main__":
 
     width = 1
     height = 1
-    figs, axs = plt.subplots(height, width, figsize=(12*width, 10*height))
-    axs = axs.flatten()
-    ax_index = 0
+    figs, axs = plt.subplots(2, 2, figsize=(12*width, 10*height))
 
     train_hsic = []
     calibration_hsic = []
@@ -64,40 +62,39 @@ if __name__ == "__main__":
         kfold_hsic.append(sdp_model.metrics[f"hsic_cal_{calibration_seed}_full"])
 
 
-    axs[ax_index].scatter(list_lengthscales, train_hsic, color="blue", label="Training Data.", alpha=0.7, marker='o', s=35)
-    axs[ax_index].scatter(list_lengthscales, calibration_hsic, color="red", label="Calibration Data.", alpha=0.7, marker='x', s=35)
-    axs[ax_index].scatter(list_lengthscales, kfold_hsic, color="green", label="Training Data, 10-folds.", alpha=0.7, marker='v', s=35)
+    axs.scatter(list_lengthscales, train_hsic, color="blue", label="Training Data.", alpha=0.7, marker='o', s=35)
+    axs.scatter(list_lengthscales, calibration_hsic, color="red", label="Calibration Data.", alpha=0.7, marker='x', s=35)
+    axs.scatter(list_lengthscales, kfold_hsic, color="green", label="Training Data, 10-folds.", alpha=0.7, marker='v', s=35)
     
     if train_hsic:
         max_train_hsic_index = np.argmax(train_hsic)
         max_train_x = list_lengthscales[max_train_hsic_index]
         max_train_y = train_hsic[max_train_hsic_index]
-        axs[ax_index].plot([max_train_x, max_train_x], [0, max_train_y], color="blue", linestyle="--", alpha=0.8, label="Max Train HSIC")
+        axs.plot([max_train_x, max_train_x], [0, max_train_y], color="blue", linestyle="--", alpha=0.8, label="Max Train HSIC")
 
     if calibration_hsic:
         max_cal_hsic_index = np.argmax(calibration_hsic)
         max_cal_x = list_lengthscales[max_cal_hsic_index]
         max_cal_y = calibration_hsic[max_cal_hsic_index]
-        axs[ax_index].plot([max_cal_x, max_cal_x], [0, max_cal_y], color="red", linestyle="--", alpha=0.8, label="Max Cal HSIC")
+        axs.plot([max_cal_x, max_cal_x], [0, max_cal_y], color="red", linestyle="--", alpha=0.8, label="Max Cal HSIC")
     
     if kfold_hsic:
         max_kfold_hsic_index = np.argmax(kfold_hsic)
         max_kfold_x = list_lengthscales[max_kfold_hsic_index]
         max_kfold_y = kfold_hsic[max_kfold_hsic_index]
-        axs[ax_index].plot([max_kfold_x, max_kfold_x], [0, max_kfold_y], color="green", linestyle="--", alpha=0.8, label="Max 10-folds HSIC")
+        axs.plot([max_kfold_x, max_kfold_x], [0, max_kfold_y], color="green", linestyle="--", alpha=0.8, label="Max 10-folds HSIC")
     
     if plot_min_dist:
         min_dist = retrieve_min(case_number, sample_size, sample_dim, seed)
-        axs[ax_index].axvline(x=min_dist, ymin=0.1, ymax=0.9, color="black", linestyle="-", alpha=0.8, label="Min X distances.")
+        axs.axvline(x=min_dist, ymin=0.1, ymax=0.9, color="black", linestyle="-", alpha=0.8, label="Min X distances.")
 
-    axs[ax_index].set_title(f"Training seed: {seed}; Calibration seed: {calibration_seed}.")
-    axs[ax_index].set_xlabel('Lengthscales')
-    axs[ax_index].set_ylabel('e-HSIC')
-    axs[ax_index].grid(True, linestyle='--', alpha=0.2)
-    axs[ax_index].set_xticks(list_lengthscales)
-    axs[ax_index].tick_params(axis='x', labelsize=5, labelrotation=45)
-    axs[ax_index].legend(loc="upper right", fontsize="small", framealpha=0.8)
-    ax_index += 1
+    axs.set_title(f"Training seed: {seed}; Calibration seed: {calibration_seed}.")
+    axs.set_xlabel('Lengthscales')
+    axs.set_ylabel('e-HSIC')
+    axs.grid(True, linestyle='--', alpha=0.2)
+    axs.set_xticks(list_lengthscales)
+    axs.tick_params(axis='x', labelsize=5, labelrotation=45)
+    axs.legend(loc="upper right", fontsize="small", framealpha=0.8)
 
     # Finish the figure and save
     figs.suptitle('e-HSIC vs lengthscales for training, calibration and 10fold-training data.', x=0.5, y=0.999, size = 16, weight = 'bold')
