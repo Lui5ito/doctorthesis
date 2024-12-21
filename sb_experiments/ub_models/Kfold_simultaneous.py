@@ -17,12 +17,14 @@ import pickle
 import os
 import s3fs
 from utils import load_file
-import concurrent.futures
+from multiprocessing import Pool
+from functools import partial
 
 
 def process_variance_lengthscale(variance_lengthscale, kFold, case_number, sample_size, sample_dim, seed, X_train, y_train, theta_m, lambda2, delta, problem):
     folded_AE = []
     folded_IW = []
+    print(variance_lengthscale)
 
     for k, (train_index, test_index) in enumerate(kFold.split(X_train)):
         # Define the model
@@ -41,7 +43,7 @@ def process_variance_lengthscale(variance_lengthscale, kFold, case_number, sampl
         hsic_value, abs_errors, half_width = sdp_model.compute_HSIC(X=X_train[test_index], y=y_train[test_index], extra=True)
         folded_AE.append(abs_errors)
         folded_IW.append(half_width)
-        
+
     folded_AE = np.vstack(folded_AE)
     folded_IW = np.vstack(folded_IW)
     kfold_hsic = Energy_HSIC(abs_error=folded_AE, width=folded_IW).compute()
@@ -62,7 +64,8 @@ if __name__ == "__main__":
     lambda2 = 1
     problem = "Liang"
 
-    number_of_splits = 2
+    number_of_splits = 10
+    num_processes = 60
 
     # Which training data
     cases = [5]
