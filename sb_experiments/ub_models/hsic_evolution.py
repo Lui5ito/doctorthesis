@@ -6,6 +6,8 @@ import os
 import s3fs
 import matplotlib.pyplot as plt
 from utils import load_file
+from scipy.spatial.distance import cdist, pdist, squareform
+
 
 def retrieve_min(case_number, sample_size, sample_dim, seed):
     # Retrieve data path
@@ -42,7 +44,7 @@ if __name__ == "__main__":
 
     width = 1
     height = 1
-    figs, axs = plt.subplots(2, 2, figsize=(12*width, 10*height))
+    figs, axs = plt.subplots(height, width, figsize=(50*width, 25*height))
 
     train_hsic = []
     calibration_hsic = []
@@ -52,11 +54,8 @@ if __name__ == "__main__":
     for variance_lengthscale in list_lengthscales:
         #FOLDER_PATH_OUT_S3 = f"luisito/these/sb_experiments/e2e_sdp/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/problem_{problem}/lambda2_{lambda2}/delta_{delta}/variance_lengthscale_{variance_lengthscale}/data_case_{cal_case_number}/sample_shape_({cal_sample_size},{cal_sample_dim})/seed_{cal_seed}/data_case_{test_case_number}/sample_shape_({test_sample_size},{test_sample_dim})/seed_{test_seed}/"
         fully_trained_FOLDER_PATH_IN_S3 = f"luisito/these/sb_experiments/ub_models/simultaneous/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/problem_{problem}/lambda2_{lambda2}/delta_{delta}/variance_lengthscale_{variance_lengthscale}/"
-        # Save whole SDP model
         model_FILE_PATH_OUT_S3 = fully_trained_FOLDER_PATH_IN_S3 + "sdp_model.pkl"
-        with fs.open(model_FILE_PATH_OUT_S3, mode="rb") as file_out:
-            sdp_model = pickle.load(file_out)
-
+        sdp_model = load_file(model_FILE_PATH_OUT_S3, fs)
         train_hsic.append(sdp_model.metrics["hsic_train_full"])
         calibration_hsic.append(sdp_model.metrics[f"hsic_train_kfold_{2}"])
         kfold_hsic.append(sdp_model.metrics[f"hsic_cal_{calibration_seed}_full"])
@@ -93,7 +92,7 @@ if __name__ == "__main__":
     axs.set_ylabel('e-HSIC')
     axs.grid(True, linestyle='--', alpha=0.2)
     axs.set_xticks(list_lengthscales)
-    axs.tick_params(axis='x', labelsize=5, labelrotation=45)
+    axs.tick_params(axis='x', labelsize=4, labelrotation=90)
     axs.legend(loc="upper right", fontsize="small", framealpha=0.8)
 
     # Finish the figure and save
