@@ -130,7 +130,7 @@ def objective_function(theta_v, grad, settings, log):
     return kfold_hsic
 
 
-def final_sdp(theta_v, settings):
+def save_best_model(theta_v, settings):
     # Unpack settings
     delta = settings["delta"]
     lambda2 = settings["lambda2"]
@@ -213,4 +213,4 @@ if __name__ == "__main__":
     print(f"Best lengthscale found is {best_theta[index_hsic]}.")
 
     # Save best model
-    final_sdp(theta_v=best_theta[index_hsic], settings=settings)
+    save_best_model(theta_v=best_theta[index_hsic], settings=settings)
