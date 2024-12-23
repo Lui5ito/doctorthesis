@@ -130,6 +130,46 @@ def objective_function(theta_v, grad, settings, log):
     return kfold_hsic
 
 
+def final_sdp(theta_v, settings):
+    # Unpack settings
+    delta = settings["delta"]
+    lambda2 = settings["lambda2"]
+    problem = settings["problem"]
+    case_number = settings["case_number"]
+    sample_size = settings["sample_size"]
+    sample_dim = settings["sample_dim"]
+    seed = settings["seed"]
+    fs = settings["fs"]
+    
+    # Get train data
+    data_FOLDER_PATH_IN_S3 = f"luisito/these/sb_experiments/data/case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/"
+    data_FILE_PATH_IN_S3 = data_FOLDER_PATH_IN_S3 + "data.npz"
+    X_train, y_train = load_file(data_FILE_PATH_IN_S3, fs)
+
+    # Get theta_m
+    gp_FOLDER_PATH_IN_S3 = f"luisito/these/sb_experiments/gp/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/"
+    gp_FILE_PATH_IN_S3 = gp_FOLDER_PATH_IN_S3 + "optimized_parameters.json"
+    theta_m = load_file(gp_FILE_PATH_IN_S3, fs)
+
+    sdp_model = ub.UniversalFunctionAndBandsRegressor(
+            mean_kernel=kernels.Matern(length_scale=theta_m["posterior_lengthscale"], length_scale_bounds=(1e-5, 1e5), nu=2.5),
+            variance_kernel=kernels.Matern(length_scale=theta_v, length_scale_bounds=(1e-5, 1e5), nu=2.5),
+            lambda2=lambda2,
+            delta=delta,
+            s=theta_m["posterior_training_norm"],
+            problem=problem,
+            checkSDP=False,
+            verbose=True,
+        )
+    sdp_model.train(X=X_train, y=y_train)
+
+    model_FOLDER_PATH_OUT_S3 = f"luisito/these/sb_experiments/optimise_lengthscale/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/problem_{problem}/lambda2_{lambda2}/delta_{delta}/variance_lengthscale_{theta_v}/"
+    model_FILE_PATH_OUT_S3 = model_FOLDER_PATH_OUT_S3 + "sdp_model.pkl"
+    with fs.open(model_FILE_PATH_OUT_S3, mode="wb") as file_out:
+        pickle.dump(sdp_model, file_out)
+
+
+
 
 if __name__ == "__main__":
     import argparse
@@ -171,3 +211,6 @@ if __name__ == "__main__":
 
     index_hsic = best_hsic.index(max(best_hsic))
     print(f"Best lengthscale found is {best_theta[index_hsic]}.")
+
+    # Save best model
+    final_sdp(theta_v=best_theta[index_hsic], settings=settings)
