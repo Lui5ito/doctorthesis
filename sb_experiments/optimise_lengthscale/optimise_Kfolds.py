@@ -9,6 +9,7 @@ import nlopt
 from functools import partial
 from sklearn.model_selection import KFold
 from universalbands.metrics.energy_hsic import Energy_HSIC
+import time
 
 
 def load_file(file_path, fs):
@@ -130,7 +131,7 @@ def objective_function(theta_v, grad, settings, log):
     return kfold_hsic
 
 
-def save_best_model(theta_v, settings):
+def save_best_model(theta_v, settings, bobyqa_time):
     # Unpack settings
     delta = settings["delta"]
     lambda2 = settings["lambda2"]
@@ -162,6 +163,7 @@ def save_best_model(theta_v, settings):
             verbose=True,
         )
     sdp_model.train(X=X_train, y=y_train)
+    sdp_model.metrics["bobyqa_time"] = bobyqa_time
 
     model_FOLDER_PATH_OUT_S3 = f"luisito/these/sb_experiments/optimise_lengthscale/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/problem_{problem}/lambda2_{lambda2}/delta_{delta}/variance_lengthscale_{theta_v}/"
     model_FILE_PATH_OUT_S3 = model_FOLDER_PATH_OUT_S3 + "sdp_model.pkl"
@@ -207,10 +209,13 @@ if __name__ == "__main__":
         "max_eval": args.max_eval,
     }
 
+    start = time.time()
     best_theta, best_hsic = restart_optimise(num_restarts=args.n_restarts, settings=settings)
+    end = time.time()
+    elapsed = (end - start)
 
     index_hsic = best_hsic.index(max(best_hsic))
     print(f"Best lengthscale found is {best_theta[index_hsic]}.")
 
     # Save best model
-    save_best_model(theta_v=best_theta[index_hsic], settings=settings)
+    save_best_model(theta_v=best_theta[index_hsic], settings=settings, bobyqa_time=elapsed)
