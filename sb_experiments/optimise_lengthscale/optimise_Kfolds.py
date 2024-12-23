@@ -6,6 +6,8 @@ import pickle
 import os
 import s3fs
 import nlopt
+from functools import partial
+from sklearn.model_selection import KFold
 from universalbands.metrics.energy_hsic import Energy_HSIC
 
 
@@ -105,7 +107,7 @@ def objective_function(theta_v, grad, settings, log):
         # Define the model
         sdp_model = ub.UniversalFunctionAndBandsRegressor(
             mean_kernel=kernels.Matern(length_scale=theta_m["posterior_lengthscale"], length_scale_bounds=(1e-5, 1e5), nu=2.5),
-            variance_kernel=kernels.Matern(length_scale=variance_lengthscale, length_scale_bounds=(1e-5, 1e5), nu=2.5),
+            variance_kernel=kernels.Matern(length_scale=theta_v, length_scale_bounds=(1e-5, 1e5), nu=2.5),
             lambda2=lambda2,
             delta=delta,
             s=theta_m["posterior_training_norm"],
