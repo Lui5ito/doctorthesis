@@ -89,7 +89,7 @@ if __name__ == "__main__":
 
     # Lengthscales to compute 900
     #list_lengthscales = np.round(np.linspace(1e-3, 1, 900), 4)
-    list_lengthscales = [0.3410]
+    list_lengthscales = [0.2821]
     delta = 1e-3
     lambda2 = 1
     problem = "Liang"
@@ -137,7 +137,7 @@ if __name__ == "__main__":
             title=f"SDP Model\nLengthscale is {variance_lengthscale}.",
         )
         FOLDER_PATH_OUT_S3 = f"luisito/these/sb_experiments/images/"
-        FILE_PATH_OUT_S3_PLOT = FOLDER_PATH_OUT_S3 + "max_10fold.pdf"
+        FILE_PATH_OUT_S3_PLOT = FOLDER_PATH_OUT_S3 + f"max_10fold_ls_{variance_lengthscale}.pdf"
         with fs.open(FILE_PATH_OUT_S3_PLOT, mode="wb") as file_out:
             figure.savefig(file_out, transparent=True, dpi='figure', format="pdf",
             metadata=None,

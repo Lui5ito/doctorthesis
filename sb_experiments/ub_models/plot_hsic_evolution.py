@@ -42,6 +42,8 @@ if __name__ == "__main__":
     seed = 123
     calibration_seed = 321
 
+    number_of_folds = 10
+
     width = 1
     height = 1
     figs, axs = plt.subplots(height, width, figsize=(50*width, 25*height))
@@ -57,8 +59,8 @@ if __name__ == "__main__":
         model_FILE_PATH_OUT_S3 = fully_trained_FOLDER_PATH_IN_S3 + "sdp_model.pkl"
         sdp_model = load_file(model_FILE_PATH_OUT_S3, fs)
         train_hsic.append(sdp_model.metrics["hsic_train_full"])
-        calibration_hsic.append(sdp_model.metrics[f"hsic_train_kfold_{2}"])
-        kfold_hsic.append(sdp_model.metrics[f"hsic_cal_{calibration_seed}_full"])
+        calibration_hsic.append(sdp_model.metrics[f"hsic_cal_{calibration_seed}_full"])
+        kfold_hsic.append(sdp_model.metrics[f"hsic_train_kfold_{number_of_folds}"])
 
 
     axs.scatter(list_lengthscales, train_hsic, color="blue", label="Training Data.", alpha=0.7, marker='o', s=35)
@@ -99,6 +101,6 @@ if __name__ == "__main__":
     figs.suptitle('e-HSIC vs lengthscales for training, calibration and 10fold-training data.', x=0.5, y=0.999, size = 16, weight = 'bold')
     figs.tight_layout()
 
-    FILE_PATH_OUT_S3 = "luisito/these/sb_experiments/images/" + "e-HISC_vs_Lengthscales_10fold.pdf"
+    FILE_PATH_OUT_S3 = "luisito/these/sb_experiments/images/" + f"e-HISC_vs_Lengthscales_{number_of_folds}fold.pdf"
     with fs.open(FILE_PATH_OUT_S3, mode="wb") as file_out:
         figs.savefig(file_out, format="pdf", transparent=True, dpi=600)

@@ -54,6 +54,13 @@ def process_variance_lengthscale(variance_lengthscale, kFold, case_number, sampl
 
 
 if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Argparse for BOBYQA optimisation.')
+    parser.add_argument('--number_of_folds', type=int)
+    args = parser.parse_args()
+    print(f"Starting optimisation for {args.number_of_folds} folds.")
+    
     # Create filesystem object
     S3_ENDPOINT_URL = "https://" + os.environ["AWS_S3_ENDPOINT"]
     fs = s3fs.S3FileSystem(client_kwargs={"endpoint_url": S3_ENDPOINT_URL})
@@ -64,7 +71,7 @@ if __name__ == "__main__":
     lambda2 = 1
     problem = "Liang"
 
-    number_of_splits = 10
+    number_of_splits = args.number_of_folds
     num_processes = 60
 
     # Which training data

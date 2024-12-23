@@ -1,0 +1,5 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/home/onyxia/work/doctorthesis/sb_experiments/optimise_lengthscale/optimise_Kfolds.py", line 8, in <module>
+    import nlopt
+ModuleNotFoundError: No module named 'nlopt'
