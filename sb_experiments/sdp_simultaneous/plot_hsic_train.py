@@ -18,7 +18,8 @@ if __name__ == "__main__":
     fs = s3fs.S3FileSystem(client_kwargs={"endpoint_url": S3_ENDPOINT_URL})
 
     # Lengthscales to compute
-    length_scale_list = np.append(np.array([1e-6, 1e-5, 1e-4, 1e-3]), np.round(np.linspace(0.01, 1, 100), 3))
+    #length_scale_list = np.append(np.array([1e-6, 1e-5, 1e-4, 1e-3]), np.round(np.linspace(0.01, 1, 100), 3))
+    length_scale_list = np.append(np.round(np.linspace(1e-6, 1e-2, 1000), 6),  np.round(np.linspace(0.01, 1, 100), 3))
     delta = 1e-3
     lambda2 = 1
     problem = "Liang"
@@ -30,7 +31,7 @@ if __name__ == "__main__":
     all_sample_seeds = [123]
 
     # Initilalise the plot
-    figs, axs = plt.subplots(len(all_sample_seeds), 1, figsize=(12, 10))
+    figs, axs = plt.subplots(len(all_sample_seeds), 1, figsize=(25, 15))
     #axs = axs.flatten()
     ax_index = 0
 
@@ -80,12 +81,13 @@ if __name__ == "__main__":
                     plt.xticks(rotation=45)
                     axs.legend(loc="upper right", fontsize="small", framealpha=0.8)
                     ax_index += 1
+                    axs.set_xscale('log')
     
     # Finish the figure and save
     figs.suptitle('e-HSIC vs lengthscales for multiple seeds and both calibration and training data.', x=0.5, y=0.99, size = 16, weight = 'bold')
     figs.tight_layout()
 
-    FILE_PATH_OUT_S3 = "luisito/these/sb_experiments/images/" + f"e-HISC_vs_Lengthscales_training_seed_{seed}.pdf"
+    FILE_PATH_OUT_S3 = "luisito/these/sb_experiments/images/" + f"SMALL_e_HISC_vs_Lengthscales_training_seed_{seed}.pdf"
     with fs.open(FILE_PATH_OUT_S3, mode="wb") as file_out:
         figs.savefig(file_out, format="pdf", transparent=True, dpi=600)
 
