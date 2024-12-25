@@ -21,7 +21,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Which data to generate
-    cases = [5]
+    cases = [10, 11]
     all_sample_sizes = args.size
     all_sample_dims = [1]
     all_sample_seeds = args.seeds

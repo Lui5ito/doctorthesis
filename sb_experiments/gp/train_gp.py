@@ -25,10 +25,10 @@ if __name__ == "__main__":
 
     # Which data to use
     # Which data to generate
-    cases = [5]
-    all_sample_sizes = [100]
+    cases = [10, 11]
+    all_sample_sizes = [200, 300, 500]
     all_sample_dims = [1]
-    all_sample_seeds = [123, 124, 125, 126, 127]
+    all_sample_seeds = [123]
 
     # Retrieve the data
     for case_number in cases:
