@@ -24,11 +24,17 @@ if __name__ == "__main__":
     fs = s3fs.S3FileSystem(client_kwargs={"endpoint_url": S3_ENDPOINT_URL})
 
     # Which data to use
+    import argparse
+    parser = argparse.ArgumentParser(description='Argparse for data generation.')
+    parser.add_argument('--cases', nargs = '+', type=int)
+    parser.add_argument('--sizes', nargs = '+', type=int)
+    parser.add_argument('--seeds', nargs='+', type=int)
+    args = parser.parse_args()
     # Which data to generate
-    cases = [10, 11]
-    all_sample_sizes = [200, 300, 500]
+    cases = args.cases
+    all_sample_sizes = args.sizes
     all_sample_dims = [1]
-    all_sample_seeds = [123]
+    all_sample_seeds = args.seeds
 
     # Retrieve the data
     for case_number in cases:

@@ -16,13 +16,15 @@ if __name__ == "__main__":
 
     import argparse
     parser = argparse.ArgumentParser(description='Argparse for data generation.')
-    parser.add_argument('--size', nargs = '+', type=int)
+    parser.add_argument('--cases', nargs = '+', type=int)
+    parser.add_argument('--sizes', nargs = '+', type=int)
     parser.add_argument('--seeds', nargs='+', type=int)
     args = parser.parse_args()
 
     # Which data to generate
     cases = [10, 11]
-    all_sample_sizes = args.size
+    cases = args.cases
+    all_sample_sizes = args.sizes
     all_sample_dims = [1]
     all_sample_seeds = args.seeds
     print(all_sample_sizes)
