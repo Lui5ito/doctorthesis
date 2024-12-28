@@ -55,7 +55,8 @@ if __name__ == "__main__":
                         data = np.load(file_in)
                         X_train = data["X"]
                         y_train = data["y"]
-
+                    print(X_train.shape)
+                    print(y_train.shape)
                     # Construct saving path
                     FOLDER_PATH_OUT_S3 = f"luisito/these/sb_experiments/gp/data_case_{case_number}/sample_shape_({sample_size},{sample_dim})/seed_{seed}/"
                     FILE_PATH_OUT_S3 = FOLDER_PATH_OUT_S3 + "optimized_parameters.json"
