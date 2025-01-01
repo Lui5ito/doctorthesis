@@ -5,6 +5,126 @@ import os
 import s3fs
 import re
 import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+from scipy import interpolate
+
+
+def plot_2d(
+    X,
+    y,
+    X_cal,
+    y_cal,
+    X_test,
+    y_test,
+    mean_estimation_test,
+    bands_estimation_test,
+    limits,
+    title,
+):
+    """
+    Plot for visualizing prediction bands in two dimensions.
+    Saves the interactive plot as an HTML file.
+    """
+    # Ensure y is a 1D array
+    y = y.flatten()
+    y_cal = y_cal.flatten()
+    y_test = y_test.flatten()
+
+    # Prepare bounds for prediction bands
+    upper_bound = mean_estimation_test + bands_estimation_test
+    lower_bound = mean_estimation_test - bands_estimation_test
+
+    # Create 3D scatter plot
+    fig = go.Figure()
+
+    # Add training points
+    fig.add_trace(
+        go.Scatter3d(
+            x=X[:, 0],
+            y=X[:, 1],
+            z=y,
+            mode="markers",
+            marker=dict(size=4, color="blue"),
+            name="Training Data",
+        )
+    )
+
+    # Add calibration points
+    fig.add_trace(
+        go.Scatter3d(
+            x=X_cal[:, 0],
+            y=X_cal[:, 1],
+            z=y_cal,
+            mode="markers",
+            marker=dict(size=4, color="orange"),
+            name="Calibration Data",
+        )
+    )
+
+    # Add test points
+    fig.add_trace(
+        go.Scatter3d(
+            x=X_test[:, 0],
+            y=X_test[:, 1],
+            z=y_test,
+            mode="markers",
+            marker=dict(size=2, color="black"),
+            name="Test Data",
+        )
+    )
+    # Add mean estimation surface
+    fig.add_trace(
+        go.Mesh3d(
+            x=X_test[:, 0],
+            y=X_test[:, 1],
+            z=mean_estimation_test.flatten(),
+            color="blue",
+            opacity=0.7,
+            name="Mean Estimation",
+        )
+    )
+
+    # Add upper bound surface
+    fig.add_trace(
+        go.Mesh3d(
+            x=X_test[:, 0],
+            y=X_test[:, 1],
+            z=upper_bound.flatten(),
+            color="orange",
+            opacity=0.5,
+            name="Upper Bound",
+        )
+    )
+
+    # Add lower bound surface
+    fig.add_trace(
+        go.Mesh3d(
+            x=X_test[:, 0],
+            y=X_test[:, 1],
+            z=lower_bound.flatten(),
+            color="orange",
+            opacity=0.5,
+            name="Lower Bound",
+        )
+    )
+
+
+    # Update layout
+    fig.update_layout(
+        scene=dict(
+            xaxis_title="X1",
+            yaxis_title="X2",
+            zaxis_title="y",
+        ),
+        title=title,
+        margin=dict(l=0, r=0, t=50, b=0),
+        showlegend=True,
+    )
+
+    return fig
+
+
 
 def load_file(file_path, fs):
     """Load a file based on its extension."""
@@ -176,27 +296,39 @@ if __name__ == "__main__":
 
         mean_prediction, bands_prediction = sdp_model.predict(X=X_test)
 
-        figure = plot(
-            X=X_train,
-            y=y_train,
-            X_cal=X_cal,
-            y_cal=y_cal,
-            X_test=X_test,
-            y_test=y_test,
-            mean_estimation_test=mean_prediction,
-            bands_estimation_test=bands_prediction,
-            limits=(-3, 5),
-            title=f"SDP Model\nLengthscale is {sdp_model.variance_kernel.get_params()['length_scale'][0]}.",
-        )
+        if sample_dim==1:
+            figure = plot(
+                X=X_train,
+                y=y_train,
+                X_cal=X_cal,
+                y_cal=y_cal,
+                X_test=X_test,
+                y_test=y_test,
+                mean_estimation_test=mean_prediction,
+                bands_estimation_test=bands_prediction,
+                limits=(-5, 8),
+                title=f"SDP Model\nLengthscale is {sdp_model.variance_kernel.get_params()['length_scale'][0]}.",
+            )
+            FILE_PATH_OUT_S3_PLOT = folder_in + "/figure.pdf"
+            with fs.open(FILE_PATH_OUT_S3_PLOT, mode="wb") as file_out:
+                figure.savefig(file_out, transparent=True, dpi='figure', format="pdf",
+                metadata=None,
+                bbox_inches=None, pad_inches=0.1, facecolor='auto', edgecolor='auto', backend=None)
+                plt.close()
 
-        FILE_PATH_OUT_S3_PLOT = folder_in + "/figure.pdf"
-        with fs.open(FILE_PATH_OUT_S3_PLOT, mode="wb") as file_out:
-            figure.savefig(file_out, transparent=True, dpi='figure', format="pdf",
-            metadata=None,
-            bbox_inches=None, pad_inches=0.1, facecolor='auto', edgecolor='auto', backend=None)
-            plt.close()
-
-
-    
-    
-
+        elif sample_dim==2:
+            figure = plot_2d(
+                X=X_train,
+                y=y_train,
+                X_cal=X_cal,
+                y_cal=y_cal,
+                X_test=X_test,
+                y_test=y_test,
+                mean_estimation_test=mean_prediction,
+                bands_estimation_test=bands_prediction,
+                limits=(-5, 8),
+                title=f"SDP Model\nLengthscale is {sdp_model.variance_kernel.get_params()['length_scale']}.",
+            )
+            FILE_PATH_OUT_S3_PLOT = folder_in + "/figure.html"
+            with fs.open(FILE_PATH_OUT_S3_PLOT, mode="w") as file_out:
+                figure.write_html(file_out)
