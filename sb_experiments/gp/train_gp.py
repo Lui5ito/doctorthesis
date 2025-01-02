@@ -33,7 +33,7 @@ if __name__ == "__main__":
     # Which data to generate
     cases = args.cases
     all_sample_sizes = args.sizes
-    all_sample_dims = [1]
+    all_sample_dims = [1, 2]
     all_sample_seeds = args.seeds
 
     # Retrieve the data
@@ -67,7 +67,7 @@ if __name__ == "__main__":
                         continue
 
                     # Train the Gausian Process Regression.
-                    kernel = Matern52(input_dim=1)
+                    kernel = Matern52(input_dim=sample_dim)
                     gp_model = GPRegression(
                         X_train,
                         y_train,
