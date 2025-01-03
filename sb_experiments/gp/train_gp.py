@@ -25,15 +25,17 @@ if __name__ == "__main__":
 
     # Which data to use
     import argparse
-    parser = argparse.ArgumentParser(description='Argparse for data generation.')
-    parser.add_argument('--cases', nargs = '+', type=int)
-    parser.add_argument('--sizes', nargs = '+', type=int)
-    parser.add_argument('--seeds', nargs='+', type=int)
+
+    parser = argparse.ArgumentParser(description="Argparse for data generation.")
+    parser.add_argument("--cases", nargs="+", type=int)
+    parser.add_argument("--sizes", nargs="+", type=int)
+    parser.add_argument("--dims", nargs="+", type=int)
+    parser.add_argument("--seeds", nargs="+", type=int)
     args = parser.parse_args()
     # Which data to generate
     cases = args.cases
     all_sample_sizes = args.sizes
-    all_sample_dims = [1, 2]
+    all_sample_dims = args.dims
     all_sample_seeds = args.seeds
 
     # Retrieve the data
@@ -47,7 +49,9 @@ if __name__ == "__main__":
 
                     # Check if the file already exists
                     if not fs.exists(FILE_PATH_IN_S3):
-                        print(f"File {FILE_PATH_IN_S3} does not exists. Cannot proceed.")
+                        print(
+                            f"File {FILE_PATH_IN_S3} does not exists. Cannot proceed."
+                        )
                         continue
 
                     # Retrieve data
@@ -63,11 +67,13 @@ if __name__ == "__main__":
 
                     # Check if the model has already been trained.
                     if fs.exists(FILE_PATH_OUT_S3):
-                        print(f"File {FILE_PATH_OUT_S3} already exists. Do not compute again.")
+                        print(
+                            f"File {FILE_PATH_OUT_S3} already exists. Do not compute again."
+                        )
                         continue
 
                     # Train the Gausian Process Regression.
-                    kernel = Matern52(input_dim=sample_dim)
+                    kernel = Matern52(input_dim=sample_dim, variance=1.0, lengthscale=None, ARD=True, active_dims=None, name='Mat52')
                     gp_model = GPRegression(
                         X_train,
                         y_train,
@@ -83,7 +89,7 @@ if __name__ == "__main__":
                     )
 
                     # Retrieve posteriors parameters of the mean kernel.
-                    posterior_lengthscale = gp_model.kern.lengthscale[0]
+                    posterior_lengthscale = list(gp_model.kern.lengthscale)
                     posterior_variance = gp_model.kern.variance[0]
                     posterior_nugget = gp_model.Gaussian_noise.variance[0]
 
@@ -106,5 +112,5 @@ if __name__ == "__main__":
 
                     # Save a copy of the model
                     MODEL_PATH_OUT_S3 = FOLDER_PATH_OUT_S3 + "gpy_model.pkl"
-                    with fs.open(MODEL_PATH_OUT_S3, 'wb') as file_out:
+                    with fs.open(MODEL_PATH_OUT_S3, "wb") as file_out:
                         pickle.dump(gp_model, file_out)
