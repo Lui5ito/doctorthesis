@@ -3,23 +3,23 @@ This file generates data for all my experiments and stores it in bucket/data.
 The data generating functions are in the universalbands package.
 """
 
-import universalbands as ub
+from universalbands.data_generation import Synthetic
 import numpy as np
 import os
 import s3fs
 
 if __name__ == "__main__":
-
     # Create filesystem object
     S3_ENDPOINT_URL = "https://" + os.environ["AWS_S3_ENDPOINT"]
     fs = s3fs.S3FileSystem(client_kwargs={"endpoint_url": S3_ENDPOINT_URL})
 
     import argparse
-    parser = argparse.ArgumentParser(description='Argparse for data generation.')
-    parser.add_argument('--cases', nargs = '+', type=int)
-    parser.add_argument('--sizes', nargs = '+', type=int)
-    parser.add_argument('--dims', nargs = '+', type=int)
-    parser.add_argument('--seeds', nargs='+', type=int)
+
+    parser = argparse.ArgumentParser(description="Argparse for data generation.")
+    parser.add_argument("--cases", nargs="+", type=int)
+    parser.add_argument("--sizes", nargs="+", type=int)
+    parser.add_argument("--dims", nargs="+", type=int)
+    parser.add_argument("--seeds", nargs="+", type=int)
     args = parser.parse_args()
 
     # Which data to generate
@@ -42,12 +42,12 @@ if __name__ == "__main__":
                         continue
 
                     # Generate the data
-                    X, y = ub.data_generation.synthetic_data(
-                        case=f"case_{case_number}",
-                        sample_size=sample_size,
-                        sample_dim=sample_dim,
-                        seed=seed,
+                    my_data = Synthetic(
+                        name=f"case_{case_number}",
+                        input_shape=(sample_size, sample_dim),
+                        output_shape=(sample_size, 1),
                     )
+                    X, y = my_data.sample(seed=seed)
 
                     # Save the data
                     with fs.open(FILE_PATH_OUT_S3, mode="wb") as file_out:
